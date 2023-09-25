@@ -1,10 +1,8 @@
 ---
 title: dependencies와 devDependency의 차이
-author: minseung
 date: 2023-09-23 19:47:00 +0800
 categories: [github Blog, Cs]
 tags: [dependencies]
-published: true
 ---
 
 ## dependencies란?
