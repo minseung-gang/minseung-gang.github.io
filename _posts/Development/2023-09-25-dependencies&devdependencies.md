@@ -1,7 +1,7 @@
 ---
 title: dependencies와 devDependency의 차이
 date: 2023-09-23 19:47:00 +0800
-categories: [github Blog, Cs]
+categories: [Development, Frontend]
 pin: true
 tags: [dependencies]
 ---
