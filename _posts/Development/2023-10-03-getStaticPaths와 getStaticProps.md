@@ -29,6 +29,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 참고사항으로 return을 할 때, fallback 옵션을 통해 빌드할 경로를 제한하거나 동적 경로를 생성할 때 필요한 데이터를 가져올 수 있다.
 
+<br/>
+
 ## getStaticProps란?
 
 [getStaticProps](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-props)는 페이지가 렌더링 되기 전에 원하는 데이터를 불러와야하는 경우 사용하며, 경로의 데이터를 가져오기 위해 서버 측에서 실행된다.
@@ -45,6 +47,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 ```
 
 getStaticPaths나 getStaticProps에서 반환된 데이터는 Next.js가 함수 간의 관계를 이해하여 페이지 컴포넌트의 props로 전달된다.
+<br/>
 
 ---
 
