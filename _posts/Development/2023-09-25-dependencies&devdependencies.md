@@ -11,7 +11,7 @@ tags: [dependencies]
 dependencies는 웹 어플리케이션의 동작과 관련된 내용이 있으며 후에 어플리케이션을 배포할 때 다운로드한 라이브러리가 포함된다.
 `npm install 라이브러리명`으로 설치한다.
 
-## dependencies예시
+### dependencies예시
 
 `axios`나 `lodash`와 같이 유틸리티 라이브러리로 프로그래밍 작업을 보다 간편하게 만들거나 유용한 기능을 제공하는 라이브러리를 예로 들 수 있다.
 
