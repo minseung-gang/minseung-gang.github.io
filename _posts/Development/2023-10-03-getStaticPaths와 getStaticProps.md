@@ -58,7 +58,7 @@ getStaticPaths나 getStaticProps에서 반환된 데이터는 Next.js가 함수 
 이번에 `getStaticPaths`와 함께 사용하면 `getStaticProps`의 매개변수(parameter)에는 어떤 값이 들어올까 궁금하여 확인해 보았다.
 
 글쓴이가 접속한 url은 `http://localhost:3000/임진강수라상`이었고, getStaticProps의 매개변수는 `{name:임진강수라상}`이 찍혀있는걸 확인할 수 있었다.<br/>
-getStaticPaths에 있는 paths 변수에는 여러개의 리스트들이 존재할 것이고 함수로 인해 여러 개의 동적 경로가 생성되었을 텐데<br/>
+getStaticPaths에 있는 paths 변수에는 여러개의 리스트들이 존재할 것이고 함수로 인해 여러 개의 동적 경로가 생성되었을 텐데,<br/>
 getStaticProps에서 받는 params에는 왜 하나의 데이터가 들어오는 걸까라는 바보같은 생각을 했었다.
 
 당연하게도 Nextjs가 각 경로에 대해 params를 순차적으로 전달하는 것이 아니라, 동적 경로를 사용하여 라우팅할 때 요청된 URL의 params 값을 전달하기 때문이라는 것을 알 수 있었다.
