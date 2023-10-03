@@ -14,6 +14,7 @@ tags: [getStaticPaths, getStaticProps]
 [getStaticPaths](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-paths)는 페이지의 경로를 정적으로 생성해준다. `getStaticPaths`에서 반환된 경로들은 빌드할때 코드의 구문들을 통해 데이터를 확인한뒤, 페이지에서 각 게시물의 동적 경로를 생성한다.
 
 ```tsx
+// [name].tsx
 export const getStaticPaths: GetStaticPaths = async () => {
   const stores = (await import("../public/store.json")).default;
 
@@ -34,6 +35,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 정적 페이지를 프리렌더링하여 서버 부하를 줄일 수 있고 빠른 페이지 로딩을 가능하게 하는 용도로 사용된다고 한다.
 
 ```tsx
+// [name].tsx
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   console.log(params);
   const stores = (await import("../public/store.json")).default;
