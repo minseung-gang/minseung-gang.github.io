@@ -10,11 +10,9 @@ Nextjs는 다른 서버가 필요 없이 특정 API 요청을 처리하기 위�
 
 ## 사용하는 방법
 
-Api 라우터를 사용하려면 pages폴더 하위에 있는 api 폴더 내에 파일을 만들어 사용하면 된다. `pages/api/hello.ts`
+Api 라우터를 사용하려면 pages폴더 하위에 있는 api 폴더 내에 파일을 만들어 사용하면 된다.`pages/api/hello.ts`
 
-api 폴더 내에있는 파일 자체가 api의 경로가 된다.
-
-`https://localhost:3000/api/hello`
+api 폴더 내에있는 파일 자체가 api의 경로가 된다. `https://localhost:3000/api/hello`
 
 참고로 `pages/api` 폴더에 생성된 파일 명에 `\_` 또는 `.` 접두사를 붙여 주면 API Endpoint를 만들지 않는다.
 
