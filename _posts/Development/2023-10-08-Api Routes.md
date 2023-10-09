@@ -1,3 +1,11 @@
+---
+title: getStaticPaths와 getStaticProps에 대해서
+date: 2023-10-08 11:32:00 +0800
+categories: [Development, NextJs]
+pin: true
+tags: [Api Route]
+---
+
 Nextjs는 다른 서버가 필요 없이 특정 API 요청을 처리하기 위한 전용 서버 사이드 라우트를 쉽게 생성할 수 있는 API Routes를 지원한다.
 
 ## 사용하는 방법
