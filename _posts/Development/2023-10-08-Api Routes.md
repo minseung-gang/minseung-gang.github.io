@@ -1,5 +1,5 @@
 ---
-title: getStaticPaths와 getStaticProps에 대해서
+title: Api Route
 date: 2023-10-08 11:32:00 +0800
 categories: [Development, NextJs]
 pin: true
