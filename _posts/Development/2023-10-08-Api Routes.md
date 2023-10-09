@@ -10,7 +10,7 @@ Nextjs는 특정 API 요청을 처리하기 위한 전용 서버 사이드 라�
 
 ## 사용하는 방법
 
-Api 라우터를 사용하려면 pages폴더 하위에 있는 api 폴더 내에 파일을 만들어 사용하면 된다.`pages/api/hello.ts`
+Api 라우터를 사용하려면 pages폴더 하위에 있는 api 폴더 내에 파일을 만들어 사용하면 된다. `pages/api/hello.ts`
 
 api 폴더 내에있는 파일 자체가 api의 경로가 된다. `https://localhost:3000/api/hello`
 
