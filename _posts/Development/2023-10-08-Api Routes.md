@@ -6,7 +6,7 @@ pin: true
 tags: [Api Route]
 ---
 
-Nextjs는 다른 서버가 필요 없이 특정 API 요청을 처리하기 위한 전용 서버 사이드 라우트를 쉽게 생성할 수 있는 API Routes를 지원한다.
+Nextjs는 특정 API 요청을 처리하기 위한 전용 서버 사이드 라우트를 쉽게 생성할 수 있는 API Routes를 지원한다.
 
 ## 사용하는 방법
 
@@ -15,7 +15,7 @@ Api 라우터를 사용하려면 pages폴더 하위에 있는 api 폴더 내에 
 api 폴더 내에있는 파일 자체가 api의 경로가 된다. `https://localhost:3000/api/hello`
 
 참고로 `pages/api` 폴더에 생성된 파일 명에 `\_` 또는 `.` 접두사를 붙여 주면 API Endpoint를 만들지 않는다.
-
+<br/>
 api 라우터는 기본적으로 `요청객체(req)`와 `응답객체(res)`를 매개변수로 받고 있으며, 해당 `handler함수`를 export해야한다.
 
 ```tsx
@@ -34,9 +34,10 @@ export default function handler(
 }
 ```
 
-여기서 `주의할 점`은 Api 라우터는 서버리스이기 때문에, DB와 지속적인 연결을 유지해야하거나 실시간 통신이 필요한 경우에는 사용이 적절하지 않다.
+여기서 `주의할 점`은 Api 라우터는 서버리스이기 때문에, DB와 지속적인 연결을 유지해야하거나 실시간 통신이 필요한 경우에는 적절하지 않다.
 
-또한 `getStaticProps`나 `getServerSideProps`에서는 사용하지 않는 편이 좋다. 해당 함수는 빌드할때만 실행되고 클라이언트 번들에 추가되지 않기 때문이다. 그렇기 때문에 Next 공식문서에서는 db에 직접 요청하는 방식을 권고하고 있다.<br/>
+또한 `getStaticProps`나 `getServerSideProps`에서는 사용하지 않는 편이 좋다.
+해당 함수는 빌드할때만 실행되고 클라이언트 번들에 추가되지 않기 때문이다. 그렇기 때문에 Next 공식문서에서는 db에 직접 요청하는 방식을 권고하고 있다.<br/>
 
 ## Api Route에는 어떤 장점이 있을까?
 
