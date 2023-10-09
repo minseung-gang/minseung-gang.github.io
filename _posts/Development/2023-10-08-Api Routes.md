@@ -44,6 +44,8 @@ export default function handler(
 
 1. api 관련 로직과 나머지 Next.js 로직을 완전히 분리시킬 수 있다. url 혹은 api의 명세서가 바뀌었을 때 api route의 코드의 로직만 변경하면 된다.
 
+2. 아래 코드와 같이 외부 서비스의 URL을 사용할 때 사용자에게는 next js서버의 도메인(/api/stores)이 보여지지 않아 백엔드 url을 보여주지않아 보안에도 도움이 된다.
+
 ```tsx
 // pages/api/stores
 
@@ -55,7 +57,5 @@ export default async function handler(
   res.status(200).json(stores);
 }
 ```
-
-2. 위 코드와 같이 외부 서비스의 URL을 사용할 때 사용자에게는 next js서버의 도메인(/api/stores)이 보여지지 않아 백엔드 url을 보여주지않아 보안에도 도움이 된다.
 
 3. 서버리스이기 때문에 인프라를 유지할 필요가 없으며 요청이 들어올때 마다 함수를 실행시키기 때문에 적은 비용으로 운영할 수 있다.
